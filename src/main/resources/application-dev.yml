@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: #데이터베이스 접속 URL
+    username: #데이터베이스 username
+    password: #데이터베이스 password
+
+  jpa:
+    hibernate:
+      ddl-auto: update # 테이블 자동 수정 허용
+    show-sql: true     # 콘솔에 SQL 출력
+
+  # MyBatis SQL 로그를 콘솔에 출력하기 위한 설정
+  logging:
+    level:
+      com.kstec.idpportal.domain: DEBUG
