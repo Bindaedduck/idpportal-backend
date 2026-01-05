@@ -5,8 +5,8 @@
 
 <mapper namespace="com.kstec.idpportal.domain.history.mapper.HistoryMapper">
 
-    <select id="findAll" resultType="HistoryDto">
-        SELECT * FROM item
+    <select id="findAll" resultType="HistoryResponse">
+        SELECT * FROM history
     </select>
 
 </mapper>
