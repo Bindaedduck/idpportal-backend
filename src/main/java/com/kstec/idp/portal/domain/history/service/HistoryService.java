@@ -1,10 +1,10 @@
-package com.kstec.idpportal.domain.history.service;
+package com.kstec.idp.portal.domain.history.service;
 
-import com.kstec.idpportal.domain.history.dto.HistoryRequest;
-import com.kstec.idpportal.domain.history.dto.HistoryResponse;
-import com.kstec.idpportal.domain.history.entity.History;
-import com.kstec.idpportal.domain.history.mapper.HistoryMapper;
-import com.kstec.idpportal.domain.history.repository.HistoryRepository;
+import com.kstec.idp.portal.domain.history.dto.HistoryRequest;
+import com.kstec.idp.portal.domain.history.dto.HistoryResponse;
+import com.kstec.idp.portal.domain.history.entity.History;
+import com.kstec.idp.portal.domain.history.mapper.HistoryMapper;
+import com.kstec.idp.portal.domain.history.repository.HistoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

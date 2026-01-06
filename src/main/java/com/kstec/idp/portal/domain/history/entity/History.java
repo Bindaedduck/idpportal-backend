@@ -1,4 +1,4 @@
-package com.kstec.idpportal.domain.history.entity;
+package com.kstec.idp.portal.domain.history.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

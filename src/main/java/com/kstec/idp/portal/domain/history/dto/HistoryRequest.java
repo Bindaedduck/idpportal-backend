@@ -1,6 +1,6 @@
-package com.kstec.idpportal.domain.history.dto;
+package com.kstec.idp.portal.domain.history.dto;
 
-import com.kstec.idpportal.domain.history.entity.History;
+import com.kstec.idp.portal.domain.history.entity.History;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

@@ -1,8 +1,8 @@
-package com.kstec.idpportal.domain.history.controller;
+package com.kstec.idp.portal.domain.history.controller;
 
-import com.kstec.idpportal.domain.history.dto.HistoryRequest;
-import com.kstec.idpportal.domain.history.dto.HistoryResponse;
-import com.kstec.idpportal.domain.history.service.HistoryService;
+import com.kstec.idp.portal.domain.history.dto.HistoryRequest;
+import com.kstec.idp.portal.domain.history.dto.HistoryResponse;
+import com.kstec.idp.portal.domain.history.service.HistoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
