@@ -2,7 +2,8 @@
 - **Framework**: Spring Boot 3.5.9
 - **Language**: Java 17
 - **Build Tool**: Gradle 8.14.3
-- **DB Mapping**: Spring Data JPA 3.5.9, MyBatis 3.0.5
+- **DB**: MongoDB 7.0.28
+- **DB Mapping**: Spring Data JPA 3.5.9, MyBatis 3.0.5, Spring Data MongoDB(MongoTemplate) 3.5.9
 - **Utilities**: Lombok<br><br><br>
 
 # 프로젝트 구성

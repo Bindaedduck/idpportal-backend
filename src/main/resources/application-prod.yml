@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: #데이터베이스 접속 URL
-    username: #데이터베이스 username
-    password: #데이터베이스 password
+    url: #db 접속 URL
+    username: #db username
+    password: #db password
 
   jpa:
     hibernate:
@@ -11,7 +11,7 @@ spring:
 
   data:
     mongodb:
-      uri: #몽고 DB 접속 URL
+      uri: #mongodb 접속 URL
 
   # MyBatis SQL 로그를 콘솔에 출력하기 위한 설정
   logging:

@@ -6,9 +6,9 @@ import com.kstec.idp.portal.domain.history.dto.HistoryResponse;
 import com.kstec.idp.portal.domain.history.entity.jpa.History;
 import com.kstec.idp.portal.domain.history.entity.mongo.HistoryDoc;
 import com.kstec.idp.portal.domain.history.mapper.HistoryMapper;
-import com.kstec.idp.portal.domain.history.repository.jpa.HistoryRepository;
-import com.kstec.idp.portal.domain.history.repository.mongo.HistoryDocRepository;
+import com.kstec.idp.portal.domain.history.repository.HistoryRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,7 +19,7 @@ public class HistoryService {
 
     private final HistoryRepository historyRepository;
     private final HistoryMapper historyMapper;
-    private final HistoryDocRepository historyDocRepository;
+    private final MongoTemplate mongoTemplate;
 
     public void saveHistory(HistoryRequest request) {
         History entity = request.toEntity();
@@ -32,7 +32,6 @@ public class HistoryService {
 
     public void saveHistoryDoc(HistoryDocRequest request) {
         HistoryDoc entity = request.toEntity();
-        historyDocRepository.save(entity);
+        mongoTemplate.save(entity);
     }
-
 }

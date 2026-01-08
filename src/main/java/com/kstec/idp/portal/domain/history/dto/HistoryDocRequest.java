@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class HistoryDocRequest {
     private String fileName;
     private String status;
-    private String ocrData;
+    private Object ocrData;
 
     public HistoryDoc toEntity() {
         return HistoryDoc.builder()

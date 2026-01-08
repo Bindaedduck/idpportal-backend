@@ -1,14 +1,12 @@
 package com.kstec.idp.portal.domain.history.entity.mongo;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
+import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import lombok.Builder;
-import lombok.Getter;
 
 @Getter
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Document(collection = "history_doc")
 public class HistoryDoc {
     @Id

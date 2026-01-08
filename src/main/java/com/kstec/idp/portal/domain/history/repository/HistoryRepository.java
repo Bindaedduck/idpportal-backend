@@ -1,4 +1,4 @@
-package com.kstec.idp.portal.domain.history.repository.jpa;
+package com.kstec.idp.portal.domain.history.repository;
 
 import com.kstec.idp.portal.domain.history.entity.jpa.History;
 import org.springframework.data.jpa.repository.JpaRepository;
