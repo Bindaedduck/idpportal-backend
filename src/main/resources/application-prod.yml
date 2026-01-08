@@ -9,6 +9,10 @@ spring:
       ddl-auto: validate # 검증만 하고 실제 DDL(CREATE, ALTER) 수행 X
     show-sql: false     # 콘솔에 SQL 출력 X(보안 및 성능)
 
+  data:
+    mongodb:
+      uri: #몽고 DB 접속 URL
+
   # MyBatis SQL 로그를 콘솔에 출력하기 위한 설정
   logging:
     level:

@@ -1,15 +1,20 @@
 spring:
   datasource:
-    url: #데이터베이스 접속 URL
-    username: #데이터베이스 username
-    password: #데이터베이스 password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  #데이터베이스 접속 URL
+    username:  #데이터베이스 username
+    password:  #데이터베이스 password
 
   jpa:
     hibernate:
       ddl-auto: update # 테이블 자동 수정 허용
     show-sql: true     # 콘솔에 SQL 출력
 
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/idpportal_db #몽고 DB 접속 URL
+
   # MyBatis SQL 로그를 콘솔에 출력하기 위한 설정
-  logging:
-    level:
-      com.kstec.idpportal.domain: DEBUG
+  # logging:
+  #  level:
+  #    com.kstec.idpportal.domain: DEBUG

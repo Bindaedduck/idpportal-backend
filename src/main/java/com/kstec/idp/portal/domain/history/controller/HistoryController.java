@@ -1,7 +1,9 @@
 package com.kstec.idp.portal.domain.history.controller;
 
+import com.kstec.idp.portal.domain.history.dto.HistoryDocRequest;
 import com.kstec.idp.portal.domain.history.dto.HistoryRequest;
 import com.kstec.idp.portal.domain.history.dto.HistoryResponse;
+import com.kstec.idp.portal.domain.history.entity.mongo.HistoryDoc;
 import com.kstec.idp.portal.domain.history.service.HistoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,15 +18,24 @@ public class HistoryController {
 
     private final HistoryService historyService;
 
-    @GetMapping("/list")
+    @GetMapping("/getHistoryList")
     public ResponseEntity<List<HistoryResponse>> getHistoryList() {
         List<HistoryResponse> list = historyService.getHistoryList();
         return ResponseEntity.ok(list);
     }
 
-    @PostMapping("/save")
+    @PostMapping("/saveHistory")
     public ResponseEntity<String> saveHistory(@RequestBody HistoryRequest request) {
         historyService.saveHistory(request);
+        return ResponseEntity.ok("save success!!!");
+    }
+
+    @GetMapping("/saveHistoryDoc")
+    public ResponseEntity<String> saveHistoryDoc(){
+        HistoryDocRequest request1 = new HistoryDocRequest("test.pdf","success","hi");
+        System.out.println("여기까진");
+        historyService.saveHistoryDoc(request1);
+        System.out.println("여기까진");
         return ResponseEntity.ok("save success!!!");
     }
 }

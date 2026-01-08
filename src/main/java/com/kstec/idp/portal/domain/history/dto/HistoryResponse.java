@@ -1,6 +1,6 @@
 package com.kstec.idp.portal.domain.history.dto;
 
-import com.kstec.idp.portal.domain.history.entity.History;
+import com.kstec.idp.portal.domain.history.entity.jpa.History;
 import lombok.*;
 
 @Getter
